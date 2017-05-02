@@ -3,7 +3,7 @@
 This project and Bootstrap are licensed under the MIT license. All aforementioned licenses appear below.
 
 
-## tea-time-talks.github.io
+## tea-time-talks
 ```
 The MIT License (MIT)
 
