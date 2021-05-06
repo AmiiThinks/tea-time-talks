@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>2020 Tea Time Talks Abstracts</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Begin page content -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="page-header">
+        <h1>2020 Tea Time Talks</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <font size="+1" face = "sans serif">
+      <p>
+        <b>Rich Sutton (June 8, 2020)</b><br>
+        <i>Are You Ready to Fully Embrace Approximation?</i><br>
+        Approximation that scales with computational resources is what drives modern machine learning. The steady drumbeat of Moore’s law enables successes, such as those of deep learning and AlphaGo, that depend on scalable approximation, and will continue to do so for the foreseeable future. Are we ready to be part of this future? Fully embracing approximation imposes a challenging discipline under which we must do without so much of what reinforcement learning takes for granted, including:
+        <ul>
+          <li>optimal policies</li>
+          <li>the discounted control objective</li>
+          <li>Markov state, and therefore:</li>
+          <ul>
+              <li>all probabilities and expectations</li>
+              <li>all true value functions</li>
+              <li>the mean square Bellman error</li>
+              <li>the mean square value error</li>
+          </Ul>
+          <li>convergence to anything</li>
+          <li>off-line learning</li>
+          <li>mapping from environment state to feature vectors.</li>
+        </ul>
+        If you are not ready to give on up all these things, then you are not ready to fully embrace approximation, and you are not ready to take what are likely to be the most important next steps in machine intelligence.<br>
+        <a href="https://youtu.be/g80wiWvOtvI">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Csaba Szepesvari (June 9, 2020)</b><br>
+        <i>Embracing approximation in RL: The perspective of a theorist</i><br>
+        In his TTT talk, Rich brought up interesting points about what may one need to give up by fully embracing approximations. Approximations, needless to say, are central to everything that we do in RL and also play a major role in computer science. In this talk, I will discuss what results are already available and also my take on how to pursue meaningful research goal in RL when you have no choice but fully embracing approximations.<br>
+        <a href="https://youtu.be/8GBAapkv6ZQ">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Patrick Pilarski (June 10, 2020)</b><br>
+        <i>On Time</i><br>
+        Time is fundamental to reinforcement learning. The literature to date has described many ways that animals and machines use aspects of the flow of time and temporal patterns to make predictions, inform decisions, process past experiences, and plan for the future. In this talk, I will begin with a survey of how and why agents perceive and represent time, as selected from the animal learning and neuroscience literature. I will then suggest what I think is a desirable set of time-related abilities for machine agents to acquire, demonstrate, and master as they continually interact with the environment around them.<br>
+        <a href="https://youtu.be/7tZZNGrc6E0">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Martha White (June 11, 2020)</b><br>
+        <i>Policy Gradient Methods as Approximate Policy Iteration: Advantages and Open Questions</i><br>
+        Many policy gradient methods can be well thought of as approximate policy iteration (API). This view is not new, but new questions arise under function approximation, when using parameterized policies. I will explain the interpretation of policy gradient methods as API, where the policy update corresponds to an approximate greedification step. This policy update can be generalized by considering other choices for greedification. I'll provide a few insights we have, both empirically and theoretically, about good choices for this approximate greedification. Many open questions remain; I hope for us to have a discussion about this API view of policy gradient methods and these open questions.<br>
+        <a href="https://youtu.be/QMnoB1Xg1rs">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Roshan Shariff (June 15, 2020)</b><br>
+        <i>Efficient Planning in Large MDPs with Weak Linear Function Approximation</i><br>
+        Large-scale Markov decision processes (MDPs) require planning algorithms with runtime independent of the number of states of the MDP. We solve the planning problem in MDPs using linear value function approximation with only weak requirements: low approximation error for the optimal value function, and a small set of “core” states whose features span those of other states. In particular, we make no assumptions about the representability of policies or value functions of non-optimal policies. Our algorithm produces almost-optimal actions for any state using a generative oracle (simulator) for the MDP, while its computation time scales polynomially with the number of features, core states, and actions and the effective horizon.<br>
+        <a href="https://youtu.be/arcBVAT2f6A">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Matt Taylor (June 16, 2020)</b><br>
+        <i>Assisting RL with External Information: Can you Help an Agent Out?</i><br>
+        When we think about deploying RL algorithms to real-world problems, we often can’t generate years worth of data with a simulator (e.g., OpenAI Five). What is an agent to do? This talk will highlight some of the ways we can leverage existing data, existing agents, and people, to motivate why we should be thinking about helping our agent succeed as quickly as possible. I’ll also be interested in the audience’s take on whether I am doomed to relearn my own Bitter Lesson.<br>
+        <a href="https://youtu.be/FjKEiPUF-Qs">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Martin Mueller (June 17, 2020)</b><br>
+        <i>Some Old Ideas about Search and Learning</i><br>
+        <a href="https://youtu.be/DIHUWFdLUec">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Sina Ghiassian (June 18, 2020)</b><br>
+        <i>Gradient Temporal-Difference Learning with Regularized Corrections</i><br>
+      </p>
+      <br>
+      <p>
+        <b>Kris De Asis (June 22, 2020)</b><br>
+        <i>Inverse Policy Evaluation for Value-based Decision-making</i><br>
+        In this work, we explore inverse policy evaluation, the process of solving for a likely policy given a value function, as a method for deriving behavior from a value function.<br>
+        <a href="https://youtu.be/6FcjvZPrBWA">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Andy Patterson (June 23, 2020)</b><br>
+        <i>Objective Function Geometry for Learning Values</i><br>
+        A brief discussion on the distribution of prediction error when learning value functions that minimize a few popular objective functions in RL. Some familiarity with chapter 11 of Sutton Barto will be useful. Much of the talk will be derived from Chapter 11 of the textbook, Schoknecht 2003, and Scherrer 2010.<br>
+        <a href="https://youtu.be/Qr_6IWPJjpo">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Junfeng Wen (June 24, 2020)</b><br>
+        <i>Batch Stationary Distribution Estimation</i><br>
+        We consider the problem of approximating the stationary distribution of an ergodic Markov chain given a set of sampled transitions. Classical simulation-based approaches assume access to the underlying process so that trajectories of sufficient length can be gathered to approximate stationary sampling. Instead, we consider an alternative setting where a fixed set of transitions has been collected beforehand, by a separate, possibly unknown procedure. The goal is still to estimate properties of the stationary distribution, but without additional access to the underlying system. We propose a consistent estimator that is based on recovering a correction ratio function over the given data. In particular, we develop a variational power method (VPM) that provides provably consistent estimates under general conditions. In addition to unifying a number of existing approaches from different subfields, we also find that VPM yields significantly better estimates across a range of problems, including queueing, stochastic differential equations, post-processing MCMC, and off-policy evaluation.<br>
+        <a href="https://youtu.be/J00ZX21tKTk">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Vincent Liu (June 25, 2020)</b><br>
+        <i>Towards a practical measure of interference for reinforcement learning </i><br>
+        Catastrophic interference is common in many network-based learning systems, and many proposals exist for mitigating it. But, before we overcome interference we must understand it better. In this work, we provide a definition of interference for control in reinforcement learning. We systematically evaluate our new measures, by assessing correlation with several measures of learning performance, including stability, sample efficiency, and online and offline control performance across a variety of learning architectures. Our new interference measure allows us to ask novel scientific questions about commonly used deep learning architectures. In particular we show that target network frequency is a dominating factor for interference, and that updates on the last layer result in significantly higher interference than updates internal to the network. This new measure can be expensive to compute; we conclude with motivation for an efficient proxy measure and empirically demonstrate it is correlated with our definition of interference.<br>
+      </p>
+      <br>
+      <p>
+        <b>Negar Hassanpour (June 29, 2020)</b><br>
+        <i>Counterfactual Reasoning in Observational Studies</i><br>
+        In this talk, I will present some ways to address certain critical challenges associated with counterfactual reasoning for causal effect estimation.<br>
+        <a href="https://youtu.be/z7SfQQgdATk">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Yangchen Pan (June 30, 2020)</b><br>
+        <i>An implicit function learning approach for parametric modal regression</i><br>
+        For multi-valued functions---such as when the conditional distribution on targets given the inputs is multi-modal---standard regression approaches are not always desirable because they provide the conditional mean. Modal regression algorithms address this issue by instead finding the conditional mode(s). Most, however, are nonparametric approaches and so can be difficult to scale. Further, parametric approximators, like neural networks, facilitate learning complex relationships between inputs and targets. We propose a parametric modal regression algorithm. We use the implicit function theorem to develop an objective, for learning a joint function over inputs and targets.<br>
+      </p>
+      <br>
+      <p>
+        <b>Rory Dawson (July 6, 2020)</b><br>
+        <i>Adaptive Switching for Improved Control of Robotic Protheses</i><br>
+        We have developed a method called Adaptive Switching that uses real-time predictions from general value functions to improve control of upper limb prostheses. In this talk we will summarize our previous work in this area and also suggest some ideas for future work and additional application areas that may benefit from the technique.<br>
+        <a href="https://youtu.be/vCXHZRSCX1o">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Connor Stephens (July 7, 2020)</b><br>
+        <i>How to Sample When No One's Watching: Open Problems in Bandit Exploration</i><br>
+        I'll discuss an online learning setting in which an agent adaptively samples rewards from a finite set of distributions, but is only concerned with the reward from their final selection. I'll provide a brief overview of applications and past work in this area before discussing some open problems.<br>
+        <a href="https://youtu.be/tllFKE7WbFQ">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Yunshu Du (July 9, 2020)</b><br>
+        <i>Lucid Dreaming for Experience Replay: Refreshing Past States with the Current Policy</i><br>
+        Experience replay (ER) improves the data efficiency of off-policy reinforcement learning (RL) algorithms by allowing an agent to store and reuse its past experiences in a replay buffer. While many techniques have been proposed to enhance ER by biasing how experiences are sampled from the buffer, thus far they have not considered strategies for refreshing experiences inside the buffer. In this work, we introduce Lucid Dreaming for Experience Replay (LiDER), a conceptually new framework that allows replay experiences to be refreshed by leveraging the agent’s current policy. LiDER 1) moves an agent back to a past state; 2) from there lets the agent try following its current policy to execute different actions—as if the agent were “dreaming” about the past, but is aware of the situation and can control the dream to encounter new experiences; and 3) stores and reuses the new experience if it turned out better than what the agent previously experienced, i.e., to refresh its memories. LiDER is designed to be easily incorporated into off-policy, multi-worker RL algorithms that use ER; we present in this work a case study of applying LiDER to an actor-critic based algorithm. Results show LiDER consistently improves performance over the baseline in four Atari 2600 games. Our open-source implementation of LiDER and the data used to generate all plots in this paper are available at [reveal after review period].<br>
+      </p>
+      <br>
+      <p>
+        <b>Parash Rahman (July 13, 2020)</b><br>
+        <i>Stochastic Gradient Descent in a Changing World</i><br>
+        In this talk, I will discuss the online learning setting where a predictor learns to predict from a stream of data. This problem setting is important for real-world applications that wish to handle the inevitable changes of the real world. I will discuss the surprising mediocre adaptability of multilayer networks updated with stochastic gradient descent, which have otherwise been successful in modern applications. Finally, I will recommend the use of generate-&-test algorithms to improve performance in the predictor's future.<br>
+        <a href="https://youtu.be/uFq0TbQ6ga8">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Yufeng Yuan (July 14, 2020)</b><br>
+        <i>Multimodal Observation Space for Robot Learning</i><br>
+        In this talk, we will explain what is multimodal observation space for robot learning and how it’s different from other commoner-used observation space like pixel observation. We then introduce some useful trick for learning completely from pixels, and investigate their effectiveness in the multimodal setting.<br>
+        <a href="https://youtu.be/cfV6I65jftY">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Han Wang (July 15, 2020)</b><br>
+        <i>Emergent Representations in Reinforcement Learning and Their Properties</i><br>
+        Representation learning remains one of the central challenges in reinforcement learning. Earlier representation learning work focuses on designing fixed-basis architectures to achieve desirable properties. However, several recent work suggests that representations emerge under appropriate training schemes, thus, the properties should be determined by the data stream. In this work, we explore properties of representations trained end-to-end with different auxiliary tasks, provide novel insights regarding the auxiliary task effect, and investigate the relationship between properties and transfer learning performance.<br>
+        <a href="https://youtu.be/Ssma4gMwsjE">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Martha Steenstrup (July 16, 2020)</b><br>
+        <i>Control of Communications Networks: Tryin' to Make it RL Compared to What?</i><br>
+        To design effective algorithms for controlling the performance of a communications network, one must confront several challenges relating to environment dynamics, fidelity of observations, responsiveness, appropriate credit assignment, and cost-benefit trade-offs.  We argue that reinforcement learning (RL) algorithms are well-suited to surmount these challenges, with supporting evidence garnered from our application of RL to the problem of congestion control, and we posit that rules of thumb for RL application, emerging from our case study, will generalize to other similar control problems.<br>
+        <a href="https://youtu.be/fBsy53kOuJk">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Matthew Schlegel (July 20, 2020)</b><br>
+        <i>A first look at hierarchical predictive coding</i><br>
+        Predictions, specifically those of general value functions, are of continued interest to the RLAI lab leading to many lines of research and thought. While there have been many new algorithms for learning GVFs in recent years, there are still many questions around the use of GVFs. Hierarchical predictive coding (Rao, 1999) is a scheme that uses predictions to inhibit feed-forward signals through corrective feedback. It has garnered considerable interest in computational neuroscience communities and several challenges. In this talk, I will introduce the core concepts of hierarchical predictive coding. If time permits, I will also discuss an instantiation of the hierarchical predictive coding model using techniques from deep learning.<br>
+        <a href="https://youtu.be/q-Iw4GqvO8k">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Alex Lewandowski (July 21, 2020)</b><br>
+        <i>Temporal Abstraction via Recurrent Neural Networks</i><br>
+        Environments come preconfigured with hyper-parameters, such as discretization rates and frame-skips, that determine an agent's window of temporal abstraction. In turn, this temporal window influences the magnitude of the action gap and greatly impacts learning. I will discuss ongoing work that uses a recurrent neural network to flexibly learn action sequences within a temporal window.<br>
+        <a href="https://youtu.be/Le8KXjFiuj8">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Shibhansh Dohare (July 22, 2020)</b><br>
+        <i>The Interplay of Search and Gradient Descent in Semi-stationary Learning Problems</i><br>
+        We explore the interplay of generate-and-test and gradient-descent techniques for solving supervised learning problems. We start by introducing a novel idealized setting in which the target function is stationary but much more complex than the learner, and in which the distribution of input is slowly varying. Then, we show that if the target function is more complex than the approximator, then tracking is better than any fixed set of weights. And finally, we find that conventional backpropagation performs poorly in this setting, but its performance can be improved if we use random-search to replace low utility features.<br>
+        <a href="https://youtu.be/Ah7MfdotAdo">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Dhawal Gupta (July 23, 2020)</b><br>
+        <i>Optimizations for TD</i><br>
+        I will talk about the possibility of using adaptive stepsize techniques from the Deep learning community for the use of Temporal Difference Learning. Does the adaptive step size methods offer some respite in divergence issues in the TD learning, mainly because of behavioural and target policy mismatch? We discuss the same on a small example using Bairds Counter Example. This is more of a proposal talk where I would like to discuss possible approaches to study the problem and what potential steps we could take. Is this even something which we should look into or should we develop completely separate step size techniques for TD learning?<br>
+        <a href="https://youtu.be/myF1HK_kzXc">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Khurram Javed (July 27, 2020)</b><br>
+        <i>Learning Causal Models Online</i><br>
+        Online learning is an essential property of an intelligent system. Unlike an offline learned system, an online learning system can adapt to changes in the world. Moreover, if the learner has limited capacity, online tracking can achieve better performance even in a stationary world. However, online learning has yet to see the same level of success as batch learning has seen over the past decade. More specifically, a scalable online representation learning method has remained elusive.<br>
+        In this talk, I will first give an overview of the online representation learning problem. I will then go over some of my recent work for discovering causal models online and propose a metric for detecting spurious features online. This metric can be combined with an online representation search algorithm to discover non-spurious features from sensory data.  Finally, I will argue that by continually removing spurious features online, we can learn models that have strong generalization.<br>
+        <a href="https://youtu.be/6qWyMnCBOzM">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Alan Chan (July 28, 2020)</b><br>
+        <i>Problems with Fair ML</i><br>
+        This talk will be a mostly non-technical dive into problems that I find with a lot of fair ML research today. I will begin with some context, provide a characterization of fair ML, go through scenarios to tease out the problems with this characterization, and conclude with some closing questions to improve upon the work being done.<br>
+        <a href="https://youtu.be/CmwJxqxcGnE">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Raksha Kumaraswamy (July 29, 2020)</b><br>
+        <i>Stochastic Optimism and Exploration</i><br>
+        A predominant theme underlying many methods to promote exploratory behaviour in Reinforcement Learning is the idea of optimism. In this talk, we will take a closer at a concrete instantiation of the idea through the lens of Stochastic Optimism. I will define Stochastic Optimism, and describe the framework within which the concept has been proposed, in the literature, to induce effective exploratory behaviour in Reinforcement Learning.<br>
+        <a href="https://youtu.be/29NE4Y3BV-E">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Qingfeng Lan (August 4, 2020)</b><br>
+        <i>Predictive Representation Learning for Language Modeling</i><br>
+        To effectively perform the task of next-word prediction, Long Short Term Memory networks (LSTMs) must keep track of many types of information. Some information is directly related to the next word's identity, but some is more secondary (e.g. discourse-level features or features of downstream words). Correlates of secondary information appear in LSTM representations even though they are not part of an explicitly supervised prediction task. In contrast, Reinforcement Learning (RL) has found success in techniques that explicitly supervise representations to predict secondary information.Inspired by that success, we propose Predictive Representation Learning (PRL), which explicitly constrains LSTMs to encode specific predictions, like those that might need to be learned implicitly. We show that PRL 1) significantly improves two strong language modeling methods, 2) converges more quickly, and 3) performs better when data is limited. Our fusion of RL with LSTMs shows that explicitly encoding a simple predictive task facilitates the search for a more effective language model.<br>
+        <a href="https://youtu.be/hJ0aMPeglfc">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Banafshe Rafiee (August 6, 2020)</b><br>
+        <i>Classical Conditioning Testbeds for State Construction</i><br>
+        In this talk, I will introduce classical conditioning testbeds for studying the problem of state construction. These testbeds are modelled after tasks in psychology where an animal is exposed to a sequence of stimuli and has to construct an understanding of its state in order to predict what will happen next. The testbeds are proposed to study online multi-step prediction. I will provide results on the first testbed, characterizing a multitude of approaches including the common modern approaches as well as simpler methods inspired by models in animal learning.<br>
+        <a href="https://youtu.be/4gWXBiMwjT0">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Abhishek Naik (August 10, 2020)</b><br>
+        <i>Learning and Planning in Average-Reward MDPs</i><br>
+        In this talk, I will talk about a family of new learning and planning algorithms for average-reward MDPs. Key to these algorithms is the use of the TD error to update the reward rate estimate instead of the conventional error, enabling proofs of convergence in the general off-policy case without recourse to any reference states. Empirically, this generally results in faster learning, while reliance on a reference state generally results in slower learning and risks divergence. I will also present a general technique to estimate the actual centered value function rather than the value function plus an offset.<br>
+        <a href="https://youtu.be/0KQ5QpYxJg4">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Ashley Dalrymple (August 11, 2020)</b><br>
+        <i>Pavlovian Control of Walking</i><br>
+        Spinal cord injury can cause paralysis of the legs. Restoring the ability to walk is of high importance to people with paralysis. In this talk I will introduce a spinal cord implant that our lab used to generate walking in a cat model. I will then describe how we used general value functions and Pavlovian control to produce highly adaptable over-ground walking. Come on out if you want to hear about how RL methods can be used to solve real world medical problems!<br>
+        <a href="https://youtu.be/uJxjbtBFk-s">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Alex Ayoub (August 12, 2020)</b><br>
+        <i>Model-Based Reinforcement Learning with Value-Targeted Regression</i><br>
+        I will discuss a model based RL algorithm that is based on optimism principle: In each episode, the set of models that are consistent with the data collected is constructed. The criterion of consistency is based on the total squared error of that the model incurs on the task of predicting values as determined by the last value estimate along the transitions. The next value function is then chosen by solving the optimistic planning problem with the constructed set of models.<br>
+        <a href="https://youtu.be/TvRmRLtejpI">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Shivam Garg (August 13, 2020)</b><br>
+        <i>Log-likelihood Baseline for Policy Gradient</i><br>
+        Policy gradient methods have a critic baseline to reduce the variance of their estimate. In this talk, we will discuss a simple idea for an analogous baseline for the log-likelihood part of the policy gradient. First, we will show that the softmax policy gradient in the case of bandits can be written in two different but equivalent expressions, which will motivate the log-likelihood baseline. One of these expressions is the regular expression which is widely used and the other one doesn't seem to be popular (or even present?) in the literature. We will then show how these expressions can be extended to the full MDP case under certain assumptions.<br>
+        <a href="https://youtu.be/MOdzJENxj78">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Kirby Banman (August 17, 2020)</b><br>
+        <i>Regression nonstationarities as dynamical systems</i><br>
+        Many supervised learning algorithms are designed to operate under i.i.d sampling.  When those algorithms are applied to problems with nonstationary sampling, they can misbehave.  Of course, this is not surprising if one takes time to understand the conditions under which an algorithm's behaviour is (or is not) guaranteed. Dynamical systems analysis offers us some tools to extend those guarantees to certain kinds of nonstationary sampling. This talk will exemplify these ideas in a simple setting: optimizing linear regression models with SGD+momentum under periodic simple nonstationarity.<br>
+        <a href="https://youtu.be/M_07Ft6PwpU">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Manan Tomar (August 18, 2020)</b><br>
+        <i>Multi-step Greedy Reinforcement Learning Algorithms</i><br>
+        Multi-step greedy policies have been extensively used in model-based reinforcement learning (RL), both when a model of the environment is available (e.g.,~in the game of Go) and when it is learned. In this paper, we explore their benefits in model-free RL, when employed using multi-step dynamic programming algorithms: $\kappa$-Policy Iteration ($\kappa$-PI) and $\kappa$-Value Iteration ($\kappa$-VI). These methods iteratively compute the next policy ($\kappa$-PI) and value function ($\kappa$-VI) by solving a surrogate decision problem with a shaped reward and a smaller discount factor. We derive model-free RL algorithms based on $\kappa$-PI and $\kappa$-VI in which the surrogate problem can be solved by any discrete or continuous action RL method, such as DQN and TRPO. We identify the importance of a hyper-parameter that controls the extent to which the surrogate problem is solved and suggest a way to set this parameter. When evaluated on a range of Atari and MuJoCo benchmark tasks, our results indicate that for the right range of $\kappa$, our algorithms outperform DQN and TRPO. This shows that our multi-step greedy algorithms are general enough to be applied over any existing RL algorithm and can significantly improve its performance.<br>
+        <a href="https://youtu.be/d2oKo_06sPI">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Robin Ranjit Singh Chauhan (August 19, 2020)</b><br>
+        <i>TalkRL and Other Projects</i><br>
+        Robin will share some highlights and learnings from a year of interviewing RL researchers on TalkRL podcast. If there is time, we can take a quick look at a few of his current and past RL-related projects.<br>
+        <a href="https://youtu.be/texzSJFsfeI">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Fernando Hernandez Garcia (August 20, 2020)</b><br>
+        <i>The Cascade-Correlation Learning Architecture: The Forgotten Network</i><br>
+        In 1990, Scott E. Fahlman and Christian Lebiere proposed a constructive neural network architecture, named the cascade-correlation architecture, as an alternative to training deep neural networks with fixed architectures using backpropagation. Despite showing promising results and spurring several follow up papers, it does not enjoy a lot of popularity nowadays in the deep learning community. In this talk, I will revisit the cascade-correlation in an attempt to answer the question: why is it not popular anymore? In the process, I'll present several empirical results that demonstrate the performance of the cascade-correlation under several settings and in different domains. I will follow up with a discussion about several disadvantages of the cascade-correlation that have been found in the literature, but also several extensions that have been proposed to address each of them. Finally, I will conclude by arguing about why we should care about the cascade-correlation in our group.<br>
+        <a href="https://youtu.be/bP-cPdp4DeM">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Matthew McLeod (August 24, 2020)</b><br>
+        <i>Intrinsically Motivated GVF Agent</i><br>
+        Intrinsic Motivation and GVFs are two exciting areas in the field of RL. In this talk, we will discuss the intersection of these two subfields and why they may be complementary to each other. We will analyze this problem with a tabular MDP and discuss some interesting initial results.<br>
+        <a href="https://youtu.be/ZF8S_1tHXxQ">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Shiva Soleimany (August 26, 2020)</b><br>
+        <i>Improving Sim-to-real transfers using computational creativity</i><br>
+        The talk is about narrowing down the reality gap using an adversarial agent that generates creative novel environments.<br>
+        <a href="https://youtu.be/aRXy4dfZGWg">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Katya Kudashkina (August 27, 2020)</b><br>
+        <i>Model-based reinforcement learning with one-step expectation models</i><br>
+        A one-step expectation model of the environment dynamics produces an estimate of the expected next state. This is less general than estimating the full distribution of possible next states, or a random sample thereof, and more general than modeling the world as deterministic. Expectation models are limited in the kinds of planning operations and value-function approximations they can use, but are well suited to being learned. We discuss what is known about expectation models in the context of model-based reinforcement learning and states that are non-Markov. We show that planning with expectation models can be done only with state values and not action values.<br>
+        <a href="https://youtu.be/wKRJBDiWs6s">YouTube</a>
+      </p>
+      <br>
+      <!-- <p>
+        <b>here (August 19, 2020)</b><br>
+        <i>here</i><br>
+        here<br>
+        <a href="here">YouTube</a>
+      </p>
+      <br> -->
+      <br>
+      <br>
+      <p><i>The 2020 tea time talks were coordinated by Abhishek Naik (anaik1 AT ualberta DOT ca).</i></p>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"><br></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
