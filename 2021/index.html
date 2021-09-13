@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>2021 Tea Time Talks Abstracts</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Begin page content -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="page-header">
+        <h1>2021 Tea Time Talks</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <font size="+1" face = "sans serif">
+      <p>
+        <b>RLAI Panel (June 7, 2021)</b><br>
+        The first Tea Time Talk of 2021 features a panel of RL researchers: Martha White, Adam White, Csaba Szepesvari, Matthew Taylor & Michael Bowling.<br>
+        <a href="https://youtu.be/2v0KEp5c2_Q">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Rich Sutton (June 8, 2021)</b><br>
+        <i>Gaps in the Foundations of Planning with Approximation</i><br>
+        Planning, a computational process widely thought essential to intelligence, consists of imagining courses of action and their consequences, and deciding ahead of time which ones to do. In the standard RLAI agent architecture, the component that does the imagining of consequences is called the model of the environment, and the deciding in advance is via a change in the agent’s policy. Planning and model learning have been studied for seven decades and yet remain largely unsolved in the face of genuine approximation—models that remain approximate (do not become exact) in the high-data limit. In this talk I briefly assess the challenges of extending RL-style planning (value iteration) in the most important ways: average reward, partial observability, stochastic transitions, and temporal abstraction (options). My assessment is that these extensions are straightforward until they are combined with genuine approximation in the model, in which case we have barely a clue how to proceed in a scalable way. Nevertheless, we do have a few clues; I suggest the ideas of expectation models, ‘meta data’, and search as general strategies for learning approximate environment models suitable for use in planning. <br>
+      </p>
+      <br>
+      <p>
+        <b>Martha White (June 10, 2021)</b><br>
+        <i>Structural Credit Assignment in Neural Networks using RL</i><br>
+      </p>
+      <br>
+      <p>
+        <b>Rupam Mahmood (June 11, 2021)</b><br>
+        <i>New Forms of Policy Gradients for Model-free Estimation</i><br>
+        Policy gradient methods are a natural choice for learning a parameterized policy, especially for continuous actions, in a model-free way. These methods update policy parameters with stochastic gradient descent by estimating the gradient of a policy objective. Many of these methods can be derived from or connected to a well-known policy gradient theorem that writes the true gradient in the form of the gradient of the action likelihood, which is suitable for model-free estimation. In this talk, we revisit this theorem and look for other forms of writing the true gradient that may give rise to new classes of policy gradient methods.<br>
+        <a href="https://youtu.be/8kNAhJNWsig">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Michael Bowling (June 14, 2021)</b><br>
+        <i>Hindsight Rationality</i><br>
+        I will look at some of the often unstated principles common in multiagent learning research, suggesting that they may be responsible for holding us back. And more importantly, might be holding back more than just multiagent. In response, I will offer an alternative set of principles, which leads to the view of hindsight rationality, rooted in online learning (and connected to correlated equilibria). I will question our beloved approaches of train-then-test, and the focus on evaluating artifacts, with a future-looking lens and comparison to optimal. Replacing them instead with a single-lifetime and a focus on evaluating behaviour with a hindsight lens and comparison to targeted deviations of behavior.
+        Note that this talk is the culmination of a year-long collaboration that introduces an alternative to Nash equilibria (with papers in AAAI and ICML this year). I will only cursorily touch on the technical contributions of those papers, instead focusing on the more philosophical principles.<br>
+        Here are links if you want to dig deeper: <a href="https://arxiv.org/abs/2012.05874">https://arxiv.org/abs/2012.05874</a> and <a href="https://arxiv.org/abs/2102.06973">https://arxiv.org/abs/2102.06973</a>.<br>
+        <a href="https://youtu.be/Yzd3kYhWiBg">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Qingfeng Lan (June 15, 2021)</b><br>
+        <i>Model-free Policy Learning with Reward Gradients</i><br>
+        Policy gradient methods estimate the gradient of a policy objective solely based on either the likelihood ratio (LR) estimator or the reparameterization (RP) estimator. However, no existing method requires and uses both estimators beyond a trivial interpolation between them. In this paper, we introduce a novel strategy to compute the policy gradient that, for the first time, incorporates both the LR and RP estimators and can be unbiased only when both estimators are present. Based on this strategy, we develop a new on-policy algorithm called the Reward Policy Gradient algorithm, which is the first model-free policy gradient method to utilize reward gradients. Using an idealized environment, we show that policy gradient solely based on the RP estimator for rewards are biased even using true rewards whereas our method is not. We also find that reward gradients can speed up learning based on experimental results on an MDP. Finally, we show that our method either performs comparably with or outperforms Proximal Policy Optimization (an LR-based method) and Soft Actor-Critic (an RP-based method) on several continuous control tasks given the same computation and memory resources.<br>
+      </p>
+      <br>
+      <p>
+        <b>Patrick Pilarski (June 15, 2021)</b><br>
+        <i>Constructivism in Tightly Coupled Human-Machine Interfaces</i><br>
+        The objectives of this talk are to: 1) Define "constructivism" and "tightly coupled" in the context of human-machine interfaces (specifically the setting of neuroprostheses); 2) Propose that for maximum potential, tightly coupled interfaces should be partially or fully constructivist; 3) Give concrete examples of how this perspective leads to beneficial properties in tightly coupled interactions, drawn from our past 10 years of work on constructing predictions and state in upper-limb prosthetic interfaces.<br>
+        <a href="https://youtu.be/sanqy5MAt4c">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Csaba Szepesvari (June 18, 2021)</b><br>
+        <i>TensorPlan: A new, flexible, scalable and provably efficient local planner for huge MDPs</i><br>
+        In this talk I will consider provably efficient planning in huge MDPs when the planner is helped with a hint about the form of the optimal value function. In particular, a thoughtful oracle provides the planner with basis functions the linear combination of which give the optimal value function either exactly, or with relatively small errors. The problem is to design a local planner, which, similarly to model-predictive control, is called to plan for a good action after every state transition, while given access to a simulator that can be used to simulate the stochastic effect of any action sequence from the states visited. We propose a new planner which, for a fixed number of actions and no matter what state it is called for, requires only polynomially many calls to the simulator in the number of basis functions and the planning horizon, but independently of the number of states, and returns an action so that the policy induced when the planner is used in a continuous model has a well-controlled suboptimality level. The planner does not use dynamic programming as we know it, but is based on the "tensorization" of the Bellman optimality equation and optimism.
+        Joint work with Gellért Weisz, Philip Amortila, Barnabás Janzer, Yasin Abbasi-Yadkori and Nan Jiang. Paper at <a href="https://arxiv.org/abs/2102.02049">https://arxiv.org/abs/2102.02049</a>.<br>
+        <a href="https://youtu.be/eKn24dNd8jc">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Roshan Shariff (June 22, 2021)</b><br>
+        <i>Lower Bounds for RL Planning</i><br>
+        I will talk about what we can learn about the reinforcement learning problem space through the lens of lower bounds for planning problems. I will briefly present some known lower bounds, and discuss where they come from, what they tell us, and why we should care.<br>
+      </p>
+      <br>
+      <p>
+        <b>Mohamed Elsayed (June 23, 2021)</b><br>
+        <i>Utility of Features with Softmax Outputs</i><br>
+        Although representational learning became an essential part of most learning systems, what forms useful representations is yet to be fully understood. Representation-search methods, such as generate and test, use a heuristic (tester) to determine the usefulness of a feature according to its contribution to the output; features with the lowest utility are replaced with newly generated ones. These techniques work well in single-output regression problems, but they do not scale to other tasks.  We study representational search in the fully online case, which means that the learning algorithm does not maintain any form of buffer and makes computations on an example-by-example basis discarding the example once computations are completed.  In this work, we propose a new tester that works with softmax outputs to extend the scope of the generate-and-test algorithms to classification tasks and environments with discrete action spaces. Moreover, we examine the proposed tester and show analytically and empirically that it ranks features correctly in comparison to the conventional testers.<br>
+      </p>
+      <br>
+      <p>
+        <b>Kenny Young (June 29, 2021)</b><br>
+        <i>Hindsight Network Credit Assignment: Improved Credit Assignment for Networks of Discrete Stochastic Neurons</i><br>
+        Training neural networks with discrete stochastic neurons presents a unique challenge. Backpropagation is not directly applicable, nor are the reparameterization tricks often used in networks with continuous stochastic variables. To address this challenge, I’ll present Hindsight Network Credit Assignment (HNCA), a variance-reduced approach to gradient estimation for networks of stochastic neurons. HNCA can be seen as a middle-ground between full backprop (which is intractable for nontrivial stochastic networks) and REINFORCE (which tends to be high variance). Compared to backprop, which propagates credit through the whole network, HNCA propagates credit just one step. HNCA produces unbiased gradient estimates with provably reduced variance compared to the REINFORCE estimator. For binary neurons, the computational cost of HNCA is on the same order as just doing a forward pass through the network, hence learning is not a significant bottleneck.  Empirical results demonstrate that HNCA significantly reduces variance in the gradient estimates compared to REINFORCE, which in turn leads to significantly improved performance.<br>
+      </p>
+      <br>
+      <p>
+        <b>Andy Patterson (June 30, 2021)</b><br>
+        <i>Robust Losses for Learning Value Functions</i><br>
+        In this talk, I will introduce two new objective functions for learning value functions, the mean absolute Bellman error and the mean Huber Bellman error. I will discuss how these relate to popular mean squared errors, the mean squared (projected) Bellman error, and will explore some properties of learning problems where these robust losses may find better solutions than their mean squared counterparts. I will end with an initial exploration of optimization algorithms that minimize these new objectives for online learning and off-policy control.<br>
+      </p>
+      <br>
+      <p>
+        <b>Michael Przystupa (July 6, 2021)</b><br>
+        <i>Analyzing Neural Jacobian Methods in Applications of Visual Servoingand Kinematic Control</i><br>
+        Designing adaptable control laws that can transfer between different robots is a challenge because of kinematic and dynamic differences, as well as in scenarios where external sensors are used.  In this work, we empirically investigate aneural networks ability to approximate the Jacobian matrixfor an application in Cartesian control schemes.  Specifically, we are interested in approximating the kinematic Jacobian, which arises from kinematic equations mapping a manipulator’s joint angles to the end-effector’s location.  We propose two different approaches to learn the kinematic Jacobian.  The first method arises from visual servoing where we learn the kinematic Jacobian as an approximate linear system of equations fromthe k-nearest neighbors for a desired joint configuration. The second, motivated by forward models in machine learning, learns the kinematic behavior directly and calculates the Jacobian by differentiating the learned neural kinematics model.  Simulation experimental results show that both methods achieve better performance than alternative data-driven methods forcontrol, provide closer approximations to the proper kinematics Jacobian matrix, and on average produce better-conditioned Jacobian matrices.  Real-world experiments were conducted on a Kinova Gen-3 lightweight robotic manipulator, which includes an uncalibrated visual servoing experiment, a practical application of our methods, as well as a 7-DOF point-to-point task highlighting that our methods are applicable on real robotic manipulators.<br>
+        <a href="https://youtu.be/uXt6qdlLXe0">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Alex Lewandowski (July 7, 2021)</b><br>
+        <i>Disentangling Generalization in Reinforcement Learning using Contextual Decision Processes</i><br>
+        The way in which generalization is measured in Reinforcement Learning (RL) relies on concepts from supervised learning. Unlike a supervised learning model however, an RL agent must generalize across states, observations and actions from limited reward-based feedback. We reformulate the problem of generalization in RL within a single environment by considering contextual decision processes with observations from a supervised learning dataset. The result is an MDP that, while simple, necessitates function approximation for state abstraction while providing precise ground-truth labels for optimal policies and value functions. We then characterize generalization in RL across different axes: state-space, observation-space and action-space. Using the MNIST dataset with a contextual decision process, we rigorously evaluate generalization of DQN and QR-DQN in observation and action space with both online and offline learning.<br>
+        <a href="https://youtu.be/ZiE8tH6x5q4">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>RLAI Panel 2 (July 8, 2021)</b><br>
+        This talk features a panel of reinforcement learning (RL) researchers -- all Amii Fellows, Canada CIFAR AI Chairs and UAlberta professors. Michael Bowling moderates this panel featuring Rich Sutton, Martha White, Patrick Pilarski and Rupam Mahmood.<br>
+        <a href="https://youtu.be/YA6PipJRV_Y">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Dhawal Gupta (July 13, 2021)</b><br>
+        <i>Structural Credit Assignment in Neural Networks Using Reinforcement Learning</i><br>
+        Structural credit assignment in neural networks is a long-standing problem, with a variety of alternatives to backpropagation proposed to allow for local training of nodes. One of the early strategies was to treat each node as an agent and use a reinforcement learning method called REINFORCE to update each node locally with only a global reward signal. In this work, we revisit this approach and investigate if we can leverage other reinforcement learning approaches to improve learning. We first formalize training a neural network as a finite-horizon reinforcement learning problem and discuss how this facilitates using ideas from reinforcement learning like off-policy learning, exploration and planning. We first show that the standard REINFORCE approach can learn but is suboptimal due to on-policy training: each agent learns to output an activation under suboptimal action selection from the other agents. We show that we can overcome this suboptimality with an off-policy approach, that it is particularly effective with discretized actions. We provide several additional experiments, highlighting the utility of exploration, robustness to correlated samples when learning online and a study into the policy parameterization of each agent.<br>
+        <a href="https://youtu.be/ri985rKEd6I">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Khurram Javed (July 14, 2021)</b><br>
+        <i>Towards Scalable Real-time Representation Learning Deep Networks with Shallow Learning</i><br>
+        In this talk I will motivate the need for scalable real-time learning algorithms and present one instantiation of an algorithm that allows us to learn deep hierarchical features in a scalable way. The central idea behind the algorithm is to build a deep recurrent network over-time. The algorithm uses shallow gradient-based learning to build new features and tests their usefulness by using them to make predictions for the task at hand. Features found to be useful are kept and used to generate even deeper features. The algorithm does not require prior knowledge about the network architecture, can learn arbitrary network topologies, and builds deep features only when depth is helpful. I will demonstrate the effectiveness of the proposed approach on a simple on-policy prediction task that requires both non-linear feature construction, and memory. <br>
+        <a href="https://youtu.be/_rAVMuIlK60">YouTube</a>
+      </p>
+      <br>
+      <p>
+        <b>Alex Ayoub (July 20, 2021)</b><br>
+      </p>
+      <br>
+      <p>
+        <b>Homayoon Farrahi (July 21, 2021)</b><br>
+        <i>Are the Hyper-Parameters of Proximal Policy Optimization Robust to Different Cycle Times?</i><br>
+        Continuous-time reinforcement learning tasks commonly use discrete steps of fixed cycle times for actions. As practitioners need to choose the action-cycle time for a given task, a significant concern is whether the hyper-parameters of the learning algorithm need to be re-tuned for each choice of the cycle time, which is prohibitive for real-world robotics. In this talk, we investigate the widely-used baseline hyper-parameter values of the Proximal Policy Optimization (PPO) algorithm across different cycle times. Using a benchmark task where the baseline hyper-parameters were shown to work well, we reveal that when a cycle time different than the task default is chosen, PPO with baseline hyper-parameters fails to learn. We propose novel approaches for setting these hyper-parameters based on the cycle time and investigate their effectiveness by performing sensitivity analysis on a simulated task and validating them on a real-world robotic task.<br>
+      </p>
+      <br>
+      <p>
+        <b>Matthew Schlegel (July 27, 2021)</b><br>
+        Building and maintaining state to learn policies and value functions is critical to deploying reinforcement learning (RL) agents in the real world. Recurrent neural networks (RNNs) have become a key point of interest for the state-building problem, and several large-scale reinforcement learning agents have incorporated recurrent networks. While RNNs have become a mainstay in many RL applications, many choices are often under-reported and contain low-level modifications to improve performance. In this work, we discuss one axis on which RNN architectures can be (and have been) modified for use in RL. Specifically, we look at how action information can be incorporated into the state update function of a recurrent cell. We discuss several choices in using action information and empirically evaluate the resulting architectures on a set of illustrative domains. Finally, we discuss future work in developing recurrent cells designed for the RL problem and discuss challenges specific to the RL setting.<br>
+      </p>
+      <br>
+      <p>
+        <b>Tian Tian (July 28, 2021)</b><br>
+        <i>Making value iteration incremental in the action space</i><br>
+        Value iteration (VI) in planning is an important dynamic programming method. Synchronous VI  sweeps over the entire state space and updates the value of each state based on an MDP model's one-step look ahead. A more suitable algorithm for AI is asynchronous VI, where a state is randomly selected at each step $n = 0,1,...$, and its state value is updated in place. It has been established that asynchronous VI can be advantageous when the state space is large. What happens if the action space is large? Asynchronous VI still uses a max operation over the backed-up values $ r(s,a) + \gamma \sum_{s' \in \mathcal{S}} p(s'|s,a) v$, performing a sweep through the  full action space at every step. The question arises: do we need to compute the backed-up values for all the actions at every step before updating the value of a single state? I will present a simple algorithm that does an ``incremental max" in every step. The algorithm first samples a subset of actions in each step and perform a max over the subset of actions rather than max over all of the actions. If the subset cardinality $m << k$, the size of the action space, then an algorithm of this form will only need to compute $m$ number of backed-up values per state per step. I'll show that using this incremental max, we can still converge to the optimal value function, and achieve an empirical performance benefit when the action space is large.<br>
+      </p>
+      <br>
+      <p>
+        <b>Abhishek Naik (August 3, 2021)</b><br>
+        <i>Towards RL in the Continuing Setting</i><br>
+        This will be a high-level, discussion-oriented talk about continuing RL. I shall explain the problem setting and the differences between similar-sounding terminology such as 'continuing,' 'continual,' and 'continuous.' Next, I shall briefly overview the current state of research in the continuing setting and outline some challenges. We shall end with a discussion on the role of continuing RL in solving AI.<br>
+      </p>
+      <br>
+      <p>
+        <b>Gautham Vasan (August 4, 2021)</b><br>
+        <i>Real-time Visuomotor Policy Learning with Anki Vector</i><br>
+        The success of reinforcement learning (RL) for real-world robotics has been, in many instances, limited to carefully controlled, instrumented laboratory scenarios, often requiring arduous human effort and oversight to enable continuous learning. In this presentation, I’ll discuss the elements necessary for a robotic learning system that can continually and autonomously improve via interactions with the real world. Specifically, I’ll be using a mobile robot (Anki Vector) to illustrate some of the challenges of visuomotor policy learning. We use a state-of-the-art off-policy learning method, Soft Actor Critic (SAC), to train a neural network capable of solving a reaching task (i.e., reach a visual target within an enclosed arena).<br>
+      </p>
+      <br>
+      <p>
+        <b>Samuele Tosatto (August 5, 2021)</b><br>
+        <i>Bootstrapping the Off-Policy Policy Gradient</i><br>
+        Off-policy reinforcement learning is crucial to obtain offline algorithms and to allow efficient sample reuse.  The policy gradient theorem provides an estimator that relies on on-policy samples. To estimate the gradient off-policy, one can either replace the on-policy distribution with the off-policy one (semi-gradient approaches), introducing a bias, or correct the distribution mismatch with importance sampling, causing a high variance.  In this talk, we introduce the notion of "Bootstrapped Policy Gradient" (BPG). BPG relies on the closed-form solution of the TD-estimation of the Q function, which can be differentiated analytically w.r.t. the policy's parameters. We show that, under some (strong) assumptions, BPG is unbiased for a broad class of off-policy distributions. The most natural formulation of BPG is offline, however, we will an online formulation that can be blended both with semi-gradient or with importance sampling correction.<br>
+      </p>
+      <br>
+      <p>
+        <b>Yufeng Yuan (August 10, 2021)</b><br>
+        <i>Asynchronous Reinforcement Learning for Real-Time Control of Physical Robots</i><br>
+        An oft-ignored challenge of real-world reinforcement learning is that, unlike standard simulated environments, the real world does not pause when agents make learning updates. In this TTT, we investigate, for the same algorithm (Soft Actor-Critic), how the sequentially-implemented version and asynchronously-implemented version differ in performance in real-world robotic control tasks.<br>
+        <!-- <a href="here">YouTube</a> -->
+      </p>
+      <br>
+      <p>
+        <b>Manan Tomar (August 17, 2021)</b><br>
+        This talk will be a high level discussion on learning representations. In particular, I will focus on the problem learning of general representations that can perform well on a variety of tasks (view-1) vs learning representations for specific task/s (view-2). I will connect view-1 with the promise of self-supervised learning techniques while connecting view-2 with RL. I will then posit the pros/cons of each view and what each view can borrow from the other. Finally, I will merge the two views to provide a more complete picture and end with a few thoughts on future directions.<br>
+      </p>
+      <br>
+      <p>
+        <b>Shibhansh Dohare (August 18, 2021)</b><br>
+        Description:The Backpropagation algorithm for learning in neural networks utilizes two mechanisms. First, stochastic gradient descent (SGD) and second, initialization with small random weights, where the latter is essential to the effectiveness of the former. Previous works by Rahman (2021) and Dohare (2020) showed that in non-stationary supervised learning problems, the conventional Backpropagation algorithm slowly loses its ability to adapt. The solution proposed by them, Continual Backprop, used a generate-and-test process alongside SGD. The generate-and-test algorithm is a search process in the space of features. It consists of two parts: the generator, which proposes new features, and  tester, which finds and replaces low utility features. However, their generate-and-test method was limited to networks with just one hidden layer and one output. In this talk, I’ll explain our new extension of generate-and-test to deep feedforward and convolutional networks. In our new method, we propose a new measure of feature utility where the utility of a feature is measured as the sum of its utility for all of its consumers. We show that our generate-and-test method is a powerful complement to the conventional Backpropagation algorithm in non-stationary supervised and reinforcement learning problems.<br>
+        Rahman, P. (2021). Toward Generate-and-Test Algorithms for Continual Feature Discovery.<br>
+        Dohare, S. (2020). The Interplay of Search and Gradient Descent in Semi-stationary Learning Problems.<br>
+      </p>
+      <br>
+      <p>
+        <b>Alexandre Trudeau (August 19, 2021)</b><br>
+        <i>Go-Exploit</i><br>
+        AlphaZero achieved superhuman performance in the games of Chess, Shogi, and Go using a general self-play reinforcement learning algorithm. AlphaZero employs exploration in its self-play games so that it encounters states throughout the state space, enabling it to learn which states and actions lead to wins. While AlphaZero uses a robust mechanism for exploration within its search, it has more simplistic mechanisms for exploration during self-play training: randomly perturbing the learned policy during search and stochastically selecting actions near the start of the game. We introduce an alternative training strategy called Go-Exploit that more reliably visits and revisits states throughout the state space and reduces exploration’s biasing of learning targets. Go-Exploit, inspired by Go-Explore, maintains an archive of previously visited states of interest and samples from this archive to determine the start state of self-play trajectories. We show in the games of Connect Four and 9x9 Go that Go-Exploit successfully visits and revisits more states throughout the state space and learns more effectively than AlphaZero.<br>
+        <!-- <a href="here">YouTube</a> -->
+      </p>
+      <br>
+      <p>
+        <b>Raksha Kumaraswamy (August 24, 2021)</b><br>
+        <i>Towards Replay-Compatible Directed Exploration</i><br>
+        To improve sample-efficiency of online reinforcement learning it is necessary that the agent directs its exploratory behaviour towards either visiting the unvisited parts of the environment, or reducing uncertainty it may have with respect to the visited parts. Many methods for sample-efficient exploration are either (a) on-policy, and so cannot leverage sample-efficiency improving off-policy strategies like replay, or (b) focused on visiting unknown regions or reducing uncertainty in visited regions, but not both. In this work we take a step towards addressing these concerns with a sample-efficient online exploration algorithm for discounted MDPs called Online Optimistic Value Iteration (OOVI). OOVI uses replay to estimate optimistic values, for both unvisited states and visited states, and computes these estimates efficiently using off-policy updates with replay. We demonstrate that OOVI is a generally competitive algorithm, with empirical sample-efficiency benefits in some hard exploration problems over existing algorithms.<br>
+      </p>
+      <br>
+      <p>
+        <b>Dylan Ashley (August 25, 2021)</b><br>
+        <i>Iterated Supervised Learning Methods for Solving Reinforcement Learning Problems</i><br>
+        While reinforcement learning (RL) is currently dominated by policy-gradient and temporal-difference-based solution methods, the space of RL solution methods is not limited to these families. In this talk, we discuss some alternative RL solution methods based on iterated supervised learning. Specifically, we examine two such existing techniques: reward-weighted regression and upside-down reinforcement learning.<br>
+      </p>
+      <br>
+      <p>
+        <b>Shivam Garg (August 26, 2021)</b><br>
+        <i>A Tale of Two Policy Gradient Estimators for Softmax Policies</i><br>
+        I will introduce and discuss the properties of two different policy gradient estimators for softmax policies. The first of these estimators, which we call the regular estimator, is the classical one which is popularly used. The second one, which we call the alternate estimator, is obtained by analytically working out the gradient for softmax policies and moving around a few terms. Both the estimators have some desirable (and undesirable) properties which make them suitable for different scenarios. For instance, the regular estimator is always unbiased and has low variance compared to the second estimator, which probably makes it the go-to choice. In contrast, the alternate estimator is, in general, biased and has higher variance! But these exact properties make it quite suitable for non-stationary tasks: in particular escaping the corners of the (policy) probability simplex (where the policy is saturated). Therefore, as I see it, there is no single winner in this tale; just two protagonists who have different strengths and weaknesses!  Specifics: Although both of these estimators work can be adapted for the bandit and the MDP setting, to keep things simple I will focus on the bandit setting. I will begin by introducing the two estimators followed by a discussion of their properties. I will use small numerical examples to build intuition about how these estimators work and then showcase experiments on the k-armed bandit testbed to verify the identified behavior.<br>
+      </p>
+      <br>
+      <!-- <p>
+        <b>here ()</b><br>
+        <i>here</i><br>
+        here<br>
+        <a href="here">YouTube</a>
+      </p>
+      <br> -->
+      <br>
+      <br>
+      <p><i>The 2021 tea time talks were coordinated by Sheila Schoepp (sschoepp AT ualberta DOT ca).</i></p>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"><br></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
