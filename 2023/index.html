@@ -49,6 +49,9 @@
       <p>
         <b>Shibhansh Dohare (June 20, 2023; CSC 3-33)</b><br>
         <i>Towards Overcoming Policy Collapse in Deep Reinforcement Learning</i>
+        <p align="justify">
+          A long-awaited characteristic of reinforcement learning agents is scalable performance, that is, to continue to learn and improve performance with a never-ending stream of experience. However, current deep reinforcement learning algorithms are known to be brittle and difficult to train, which limits their scalability. For example, the learned policy can dramatically worsen after some initial training as the agent continues to interact with the environment. We call this phenomenon \textit{policy collapse}. We first establish that policy collapse can occur in both policy gradient and value-based methods. Policy collapse happens in these algorithms in typical benchmarks such as Mujoco environments when trained with their commonly used hyper-parameters. In a simple 2-state MDP, we show that the standard use of the Adam optimizer with its default hyper-parameters is a root cause of policy collapse. Specifically, the standard use of Adam can lead to sudden large weight changes even when the gradient is small whenever there is non-stationarity in the data stream. We find that policy collapse can be largely mitigated by using the same hyper-parameters for the running averages of the first and second moments of the gradient. Additionally, we find that aggressive L2 regularization also mitigates policy collapse in many cases. Our work establishes that a minimal change in the existing usage of deep reinforcement learning can reduce policy collapse and enable more stable and scalable deep reinforcement learning.
+        </p>
       </p>
       <br>
 
@@ -63,6 +66,9 @@
 
       <p>
         <b>Sumedh Pendurkar (June 22, 2023; CSC 3-33)</b><br>
+        <i>Bilevel Entropy based Mechanism Design for Balancing Meta in Video Games</i>
+        <p align="justify">
+          In this talk, I will present a mechanism design problem where the goal of the designer is to maximize the entropy of a player’s mixed strategy at a Nash equilibrium. This objective is of special relevance to video games where game designers wish to diversify the players’ interaction with the game. To solve this mechanism design problem, I will present a bi-level alternating optimization technique that (1) approximates the mixed strategy Nash equilibrium using a Nash Monte-Carlo reinforcement learning approach and (2) applies a gradient-free optimization technique (Covariance-Matrix Adaptation Evolutionary Strategy) to maximize the entropy of the mixed strategy obtained in level (1). The experimental results show that the proposed approach achieves comparable results to the state-of-the-art approach on three benchmark domains “Rock-Paper-Scissors-Fire-Water”, “Workshop Warfare” and “Pokemon Video Game Championship”. Next, I will present our empirical findings that, unlike previous state-of-the-art approaches, the computational complexity of our proposed approach scales significantly better in larger combinatorial strategy spaces.        </p>
       </p>
       <br>
 
