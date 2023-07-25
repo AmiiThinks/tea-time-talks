@@ -181,13 +181,9 @@
 
       <p>
         <b>Michael Przystupa (July 27, 2023; CSC 3-33)</b><br>
-        <i>Properties of Latent Action Models for Robotics</i><br>
+        <i>Deep Probabilistic Motor Primitives with a Bayesian Aggregator </i><br>
         <p align="justify">
-          Learning optimal policies in large action spaces can be computationally expensive.
-          Therefore, one research direction has proposed that learning an intermediate model that maps latent actions to the original action space can improve learning sample efficiency.
-          Empirical research results support this claim that these compressed action spaces have benefits in reinforcement learning and robotic teleoperation.
-          However, there needs to be more work providing any guarantees of these representations in reachability in an agent's state space.
-          In this talk, we propose that, at least for robotic applications, one can derive theoretical navigation guarantees in relevant portions of the state space that can impact navigation in the entire state space.
+          Movement primitives are trainable parametric models that reproduce robotic movements starting from a limited set of demonstrations. Previous works proposed simple linear models that exhibited high sample efficiency and generalization power by allowing temporal modulation of movements (reproducing movements faster or slower), blending (merging two movements into one), via-point conditioning (constraining a movement to meet some particular via-points) and context conditioning (generation of movements based on an observed variable, e.g., position of an object). Previous works have proposed neural network-based motor primitive models, demonstrating their capacity to perform tasks with some forms of input conditioning or time-modulation representations. However, there has not been a single unified deep motor primitive's model proposed that is capable of all previous operations, limiting neural motor primitive's potential applications. This talk discusses our proposed deep movement primitive architecture that encodes all the operations above and uses a Bayesian context aggregator that allows a more sound context conditioning and blending. Our results demonstrate that our approach can scale to reproduce complex motions on a larger variety of input choices compared to baselines while maintaining operations of linear movement primitives provide.
         </p>
       </p>
       <br>
