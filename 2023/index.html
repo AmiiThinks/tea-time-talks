@@ -254,6 +254,10 @@ Note: This talk will be primarily based on the following blogs: http://www.argmi
 
       <p>
         <b>Gautham Vasan (August 23, 2023; Amii)</b><br>
+        <i>Reward (Mis-)Specification in Reinforcement Learning</i>
+        <p align="justify">
+          When formulating a problem as a reinforcement learning (RL) task, one of the crucial steps is determining the reward function. Ideally, we seek reward functions that accurately capture the intended problem, are convenient to specify, and facilitate the agent with learning.  Many real-world robot learning problems, such as pick-and-place or arriving at a destination, can be seen as a problem of reaching a goal state as soon as possible. These problems can be naturally formulated as episodic RL tasks with termination upon reaching the goal state. For such tasks, a -1 reward every time step until termination is easy to specify and aligns well with our intention. However, such sparse-reward formulations are avoided in practice, as they are thought to be difficult and uninformative for learning.  Hence, RL practitioners often construct rewards that reflect the task designer's domain knowledge and preferred behaviors. These handcrafted rewards go beyond specifying what task to solve and guide the agent on how to solve the task. First, I'll elucidate how such guiding rewards can often bias the learned control policy in a potentially sub-optimal way.  Then I'll demonstrate the superiority of control policies learned using sparse rewards over guiding rewards. Contrary to popular belief, I'll show that it is possible to have robust, reliable learning from scratch on challenging vision-based robotics tasks using only sparse rewards in just a few hours.
+        </p>
       </p>
       <br>
 
