@@ -263,6 +263,10 @@ Note: This talk will be primarily based on the following blogs: http://www.argmi
 
       <p>
         <b>Rich Sutton (August 24, 2023; CSC 3-33)</b><br>
+        <i>Are You Ready to Embrace Structural Credit Assignment?</i>
+        <p align="justify">
+          In artificial neural networks, many weights affect each momentary error. Deciding which of them to change is the problem of structural credit assignment. I hold that the field has never really come to grips with this problem. In the most naive algorithm, steepest descent, each weight is changed proportional to its component of the gradient vector. However, in a multi-layer network, the gradients in different layers can differ by multiple orders of magnitude, and this method results in some weights exploding while others remain almost static. Standard algorithms such as RMSprop and Adam normalize the gradient components by dividing each by its variance. This makes all weights change by about the same amount (which is better than their changing by wildly different amounts for no reason) but is also a direct abdication of responsibility for structural credit assignment---for deciding which weights should change and which should not. Structural credit assignment is most important in long-lived continual-learning networks, where the failure to address it erupts in the problems of catastrophic forgetting and loss of plasticity. Structural credit assignment is arguably key to the challenges of representation learning and generalization. In this talk I focus on the problem of structural credit assignment, but I also suggest that meta-gradient learning methods (such as IDBD) offer a possible route to its solution.
+        </p>
       </p>
       <br>
 
@@ -271,7 +275,7 @@ Note: This talk will be primarily based on the following blogs: http://www.argmi
       <p><i>The 2023 tea time talks are coordinated and organized by Yanqing Wu (yanqing.wu AT ualberta DOT ca).</i></p>
       <br>
       <p>
-        Special thanks to our dedicated volunteers: Alireza Kazemipour, Alex Lewandowski, Sheila Schoepp and Deepak Mamillapalli.
+        Special thanks to our dedicated volunteers: Alireza Kazemipour, Alex Lewandowski and Sheila Schoepp.
       </p>
     </div>
 
