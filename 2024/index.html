@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>2023 Tea Time Talks Abstracts</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Begin page content -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="page-header">
+        <h1>2023 Tea Time Talks</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <font size="+1" face = "sans serif">
+      <p>
+        <b>Banafsheh Rafiee (June 8, 2023; CSC 3-33)</b><br>
+        <i>Auxiliary task discovery through generate and test</i>
+        <p align="justify">
+          In this talk, I will present an approach to auxiliary task discovery in reinforcement learning based on ideas from representation learning. Auxiliary tasks tend to improve data efficiency by forcing the agent to learn auxiliary prediction and control objectives in addition to the main task of maximizing reward, and thus producing better representations. Typically these tasks are designed by people. Meta-learning offers a promising avenue for automatic task discovery; however, these methods are computationally expensive and challenging to tune in practice. In this talk, I will present a complementary approach to the auxiliary task discovery: continually generating new auxiliary tasks and preserving only those with high utility. I also introduce a new measure of auxiliary tasks' usefulness based on how useful the features induced by them are for the main task. The proposed algorithm significantly outperforms random tasks and learning without auxiliary tasks across a suite of environments. 
+        </p>
+      </p>
+      <br>
+
+      <!-- <p>
+        <b>Matt Taylor (June 14, 2023; Amii)</b><br>
+        <i>Humans: Who needs them?</i><br>
+        <p align="justify">
+        Reinforcement learning is amazing.
+        But where does the MDP actually come from? I’m going to argue in this that humans are critical to the RL lifecycle. Moreover, I’ll argue that significant improvements to existing explainability techniques are required to fully invest humans, whether lay people, subject matter experts, or machine learning experts, with the ability required to drive this human-agent interaction for Human-In-The-Loop RL.<br>
+        </p>
+      </p>
+      <br> -->
+
+      <p>
+        <b>Shibhansh Dohare (June 20, 2023; CSC 3-33)</b><br>
+        <i>Towards Overcoming Policy Collapse in Deep Reinforcement Learning</i>
+        <p align="justify">
+          A long-awaited characteristic of reinforcement learning agents is scalable performance, that is, to continue to learn and improve performance with a never-ending stream of experience. However, current deep reinforcement learning algorithms are known to be brittle and difficult to train, which limits their scalability. For example, the learned policy can dramatically worsen after some initial training as the agent continues to interact with the environment. We call this phenomenon \textit{policy collapse}. We first establish that policy collapse can occur in both policy gradient and value-based methods. Policy collapse happens in these algorithms in typical benchmarks such as Mujoco environments when trained with their commonly used hyper-parameters. In a simple 2-state MDP, we show that the standard use of the Adam optimizer with its default hyper-parameters is a root cause of policy collapse. Specifically, the standard use of Adam can lead to sudden large weight changes even when the gradient is small whenever there is non-stationarity in the data stream. We find that policy collapse can be largely mitigated by using the same hyper-parameters for the running averages of the first and second moments of the gradient. Additionally, we find that aggressive L2 regularization also mitigates policy collapse in many cases. Our work establishes that a minimal change in the existing usage of deep reinforcement learning can reduce policy collapse and enable more stable and scalable deep reinforcement learning.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Montaser Mohammedalamen (June 21, 2023; Amii)</b><br>
+        <i>Learning To Be Cautious</i>
+        <p align="justify">
+          A key challenge in the field of reinforcement learning is to develop agents that behave cautiously in novel situations. It is generally impossible to anticipate all situations that an autonomous system may face or what behavior would best avoid bad outcomes. An agent that could learn to be cautious would overcome this challenge by discovering for itself when and how to behave cautiously. In contrast, current approaches typically embed task-specific safety information or explicit cautious behaviors into the system, which is error-prone and imposes extra burdens on practitioners. In this paper, we present both a sequence of tasks where cautious behavior becomes increasingly non-obvious, as well as an algorithm to demonstrate that it is possible for a system to \emph{learn} to be cautious. The essential features of our algorithm are that it characterizes reward function uncertainty without task-specific safety information and uses this uncertainty to construct a robust policy. Specifically, we construct robust policies with a k-of-N counterfactual regret minimization (CFR) subroutine given a learned reward function uncertainty represented by a neural network ensemble belief. These policies exhibit caution in each of our tasks without any task-specific safety tuning.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Sumedh Pendurkar (June 22, 2023; CSC 3-33)</b><br>
+        <i>Bilevel Entropy based Mechanism Design for Balancing Meta in Video Games</i>
+        <p align="justify">
+          In this talk, I will present a mechanism design problem where the goal of the designer is to maximize the entropy of a player’s mixed strategy at a Nash equilibrium. This objective is of special relevance to video games where game designers wish to diversify the players’ interaction with the game. To solve this mechanism design problem, I will present a bi-level alternating optimization technique that (1) approximates the mixed strategy Nash equilibrium using a Nash Monte-Carlo reinforcement learning approach and (2) applies a gradient-free optimization technique (Covariance-Matrix Adaptation Evolutionary Strategy) to maximize the entropy of the mixed strategy obtained in level (1). The experimental results show that the proposed approach achieves comparable results to the state-of-the-art approach on three benchmark domains “Rock-Paper-Scissors-Fire-Water”, “Workshop Warfare” and “Pokemon Video Game Championship”. Next, I will present our empirical findings that, unlike previous state-of-the-art approaches, the computational complexity of our proposed approach scales significantly better in larger combinatorial strategy spaces.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Alex Lewandowski (June 27, 2023; CSC 3-33)</b><br>
+        <i>Small Continual Learning Problems: Time Helps Prevent Plasticity Loss</i>
+        <p align="justify">
+          I will argue that time plays an important, but mysterious, role in continual learning. The talk will begin by discussing fundamental issues in continual learning, focusing on plasticity loss in neural networks. I will then present preliminary work on a simple one-dimensional regression problem that leads to plasticity loss, even for a deep and wide neural network. The main finding is that plasticity loss can be prevented by allowing the neural network to observe a representation of time - even though the representation of time is uncorrelated with the regression problem. I will conclude with next steps for understanding the role of time in continual learning.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Khurram Javed (June 28, 2023; Amii)</b><br>
+        <i>Demystifying Why Larger Neural Networks Generalize Better</i>
+        <p align="justify">
+          A large part of the ML community believes that larger neural networks generalize better. In this talk, I will share some experiments that show that larger models indeed generalize better in supervised learning tasks. I will, then, try to demystify the reason behind their better generalization. Finally, I will demonstrate how we can potentially exploit our newfound understanding to achieve better generalization with smaller models.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Levi Lelis (June 29, 2023; CSC 3-33)</b><br>
+        <i>Programmatic Policies: Are They Worth the Trouble?</i>
+        <p align="justify">
+        In this presentation, we will explore the concept of using computer programs to represent policies, commonly referred to as programmatic policies in the literature. Programmatic policies offer several advantages, including better generalization to unseen environments and interpretability. However, the main challenge associated with programmatic policies is the need to search through extensive and often discontinuous program spaces to synthesize them. So, here's the big question: Are they worth the hassle?
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Revan MacQueen (July 4, 2023; CSC 3-33)</b><br>
+        <i>Guarantees for Self-Play</i>
+        <p align="justify">
+          Self-play is a technique for machine learning in multi-agent systems where an algorithm learns by interacting with copies of itself. While self-play is useful for generating training data, an agent may encounter dramatically different behaviour with new opponents than it came to expect from self-play alone.  I will be outlining some of the problems of self-play in multi-player and general-sum games, and describe a class of multi-player games where self-play via regret minimization works well—i.e. when learned behaviour generalizes well to interactions with new agents post-training. I conjecture that poker belongs to this class of games, which I validate using experiments on a toy game.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Kris De Asis (July 5, 2023; Amii)</b><br>
+        <i>Value-aware Importance Weighting for Off-policy RL</i>
+        <p align="justify">
+          Importance sampling is a central idea underlying off-policy reinforcement learning, as it provides a strategy for re-weighting samples from one distribution to obtain unbiased estimates under another distribution. However, importance sampling's weights tend to exhibit excessive variance, often leading to stability issues in practice. In this talk, we consider a broader class of importance weights to re-weight samples in off-policy learning. We propose the use of value-aware importance weights which take into account the sample space to provide lower variance, and still unbiased, estimates under a target distribution. We derive how an instance of these weights can be computed, and note key properties of the resulting importance weights. We then extend several value-based reinforcement learning algorithms to the off-policy setting with these weights, and evaluate them empirically.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Marlos C. Machado (July 6, 2023; CSC 3-33)</b><br>
+        <i>Deep Laplacian-based Options for Temporally-Extended Exploration</i><br>
+        <p align="justify">
+          Selecting exploratory actions that generate a rich stream of experience for better learning is a fundamental challenge in reinforcement learning (RL).
+          An approach to tackle this problem consists in selecting actions according to specific policies for an extended period of time, also known as options.
+          A recent line of work to derive such exploratory options builds upon the eigenfunctions of the graph Laplacian.
+          Importantly, until now these methods have been mostly limited to tabular domains where (1) the graph Laplacian matrix was either given or could be fully estimated,
+          (2) performing eigendecomposition on this matrix was computationally tractable, and (3) value functions could be learned exactly. Additionally, these methods required a separate option discovery phase.
+          These assumptions are fundamentally not scalable. In this paper we address these limitations and show how recent results for directly approximating the eigenfunctions of the Laplacian can be leveraged to truly scale up options-based exploration.
+          To do so, we introduce a fully online deep RL algorithm for discovering Laplacian-based options and evaluate our approach on a variety of pixel-based tasks.
+          We compare to several state-of-the-art exploration methods and show that our approach is effective, general, and especially promising in non-stationary settings.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Arsalan Sharifnassab (July 11, 2023; CSC 3-33)</b><br>
+        <i>Toward Efficient Gradient-Based Value Estimation</i>
+        <p align="justify">
+          Gradient-based methods for value estimation in reinforcement learning have favourable stability properties, but they are typically much slower than Temporal Difference (TD) learning methods. We provide an explanation for the root cause of this slowness in terms of the properties of the loss landscape, and propose a low complexity batch-free proximal method that resolves the slowness problem. Our main algorithm, called RANS, is efficient in the sense that it is significantly faster than the residual gradient methods while having almost the same computational complexity, and is competitive with TD on the classic problems that we tested. 
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Nadia Ady (July 12, 2023; Amii)</b><br>
+        <i>Interdisciplinary Methods: How Human Variables Shape Human-Inspired AI Research</i>
+        <p align="justify">
+          In today's global artificial intelligence (AI) community, a subset of AI researchers attempt to port concepts from human psychology into computation. Creativity, imagination, depression, emotion, forgetting, curiosity: pinning down the meaning of concepts like these becomes especially salient in the context of this practice. Yet, the human processes shaping human-inspired computational systems have been little investigated. Starting with data from 22 in-depth, semi-structured interviews, this talk explores questions about which human literatures (social sciences, psychology, neuroscience) enter AI scholarship, how they are translated at the port of entry, and what that might mean for us in AI. *This talk is based on the paper that won Best Student Paper at the International Conference on Computational Creativity (ICCC'23).
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Michael Ogezi (July 19, 2023; Amii)</b><br>
+        <i>Improving Aesthetics and Fidelity in Text-to-Image Generation via Reinforcement Learning</i><br>
+        <p align="justify">
+          In text-to-image generation, using negative prompts, which describe undesirable image characteristics, can significantly boost image quality. However, producing good negative prompts is a manual and tedious process. To address this, we propose NegOpt, a novel method for optimizing the process of producing negative prompts toward enhanced image generation, using supervised fine-tuning and reinforcement learning. Our combined approach results in a substantial increase of 25% in Inception Scores compared to previous approaches, and we even surpass ground-truth negative prompts from the test set. Most importantly, with NegOpt, we can preferentially optimize the metrics most important to us. Finally, we introduce Negative Prompts DB, the first-of-its-kind dataset of negative prompts.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Ehsan Imani (July 25, 2023; CSC 3-33)</b><br>
+        <i>Tunnels in Neural Networks</i><br>
+        <p align="justify">
+          We show that sufficiently deep networks trained for supervised image classification split into two distinct parts that contribute to the resulting data representations differently. The initial layers create linearly-separable representations, while the subsequent layers, which we refer to as the tunnel, compress these representations and have a minimal impact on the overall performance. We then look at a catastrophic forgetting scenario through this lens and discuss the role of each part of the network in forgetting.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Edan Meyer (July 26, 2023; Amii)</b><br>
+        <i>Discrete Representations in RL Kinda Slap... But Why?</i><br>
+        <p align="justify">
+          The quality of an agent's representation of the world can make or break the RL learning process. Recent works have intimated that learning discrete representations can yield benefits in RL, but is that really the case? And if so, why do they help?
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Michael Przystupa (July 27, 2023; CSC 3-33)</b><br>
+        <i>Deep Probabilistic Motor Primitives with a Bayesian Aggregator </i><br>
+        <p align="justify">
+          Movement primitives are trainable parametric models that reproduce robotic movements starting from a limited set of demonstrations. Previous works proposed simple linear models that exhibited high sample efficiency and generalization power by allowing temporal modulation of movements (reproducing movements faster or slower), blending (merging two movements into one), via-point conditioning (constraining a movement to meet some particular via-points) and context conditioning (generation of movements based on an observed variable, e.g., position of an object). Previous works have proposed neural network-based motor primitive models, demonstrating their capacity to perform tasks with some forms of input conditioning or time-modulation representations. However, there has not been a single unified deep motor primitive's model proposed that is capable of all previous operations, limiting neural motor primitive's potential applications. This talk discusses our proposed deep movement primitive architecture that encodes all the operations above and uses a Bayesian context aggregator that allows a more sound context conditioning and blending. Our results demonstrate that our approach can scale to reproduce complex motions on a larger variety of input choices compared to baselines while maintaining operations of linear movement primitives provide.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Martha White (August 3, 2023; CSC 3-33)</b><br>
+        <i>Understanding Issues with Actor-Critic</i>
+        <p align="justify">
+          Actor-critic methods are a large family of control algorithms in reinforcement learning that learn an explicit parameterized policy (actor) guided by estimates of the return for this policy (critic). Anecdotally, you might hear the following complaint: actor-critic is so finnicky. The goal of this talk is to give you a slightly different perspective on actor-critic and discuss a few potential reasons this complaint might be true.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Homayoon Farrahi (August 9, 2023; Amii)</b><br>
+        <i>Automatic Meta-Descent</i>
+        <p align="justify">
+          Online continual-learning agents need to adapt to the nonstationarities in the environment. Since the environment can combine stationary and nonstationary components, each weight of the learning agent can benefit from its own adjustable step size. In meta-descent, both the weight and step-size values are learned using gradient descent to optimize the objective of the problem. We show that the meta-step size of an existing meta-descent algorithm has to be tuned to perform reasonably on different problems. We propose a novel meta-descent algorithm using the normalization technique of Adam and empirically compare it with Adam in a continuous-control reinforcement learning task.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Evgenii Nikishin (August 10, 2023; CSC 3-33)</b><br>
+        <i>Summary of Perspectives on Plasticity Loss</i>
+        <p align="justify">
+          Plasticity is defined broadly as ability to learn. Loss of plasticity thus encompasses all possible challenges that could occur during learning. This talk makes an attempt at presenting a more fine-grained categorization of instances of plasticity loss. We also discuss solution strategies for addressing the phenomenon. We conclude with an overview of future directions and a speculation about the plasticity of pre-trained neural networks.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Mohamed Elsayed (August 15, 2023; CSC 3-33)</b><br>
+        <i>Utility-based Representation Search</i>
+        <p align="justify">
+          Most representation learning methods struggle in continual learning due to catastrophic forgetting and/or loss of plasticity. These issues stem from the fact that gradient-based methods are indifferent to how useful a feature is. When a feature becomes difficult to modify, contributing to the loss of plasticity, the problem could be overcome by re-initializing or perturbing that feature. Conversely, when a feature is useful and well-contributing to a task, it could be protected from further change and catastrophic forgetting. In this talk, I will present Utility-based Perturbed Search (UPS), a representation search algorithm that works by protecting useful weights or features and perturbing less useful ones to improve representations. Further, I will demonstrate how UPS can seamlessly integrate with SGD to help tackle continual learning issues.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Abhishek Naik (August 16, 2023; Amii)</b><br>
+        <i>Improving Discounting Using Average Reward</i>
+        <p align="justify">
+          I will present a variant of discounted solution methods that are stable even when the discount factor approaches one—with tabular, linear, and non-linear function approximation. I will explain the insight that enables this. If time permits, I will also show how the same insight helps reduce the dependence of performance on a hidden parameter—the initialization of the value estimates.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Shuai Liu (August 17, 2023; CSC 3-33)</b><br>
+        <i>Perturbed History Exploration in Stochastic Generalized Linear Bandits</i>
+        <p align="justify">
+          Nonlinear function approximation in RL and bandit is powerful but is still in lack of understanding (theoretically). This talk aims to extend the classic linear bandit framework to a broad class of nonlinear functions, a subset of generalized linear model, as well as introducing the perturbed history exploration (PHE) method that possesses satisfactory theoretical guarantees and computational efficiency. I will justify the assumptions, briefly introduce the PHE algorithm and finally point out future directions in extending this work to RL.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Shivam Garg (August 22, 2023; CSC 3-33)</b><br>
+        <i>An introduction to policy gradient methods</i>
+        <p align="justify">
+          I will briefly introduce the policy gradient approach to solving RL type control problems, and then discuss some analysis techniques people use to study them.
+Note: This talk will be primarily based on the following blogs: http://www.argmin.net/2018/02/20/reinforce/ and https://rltheory.github.io/lecture-notes/planning-in-mdps/lec15/. While these resources have been around for quite some time, I revisited them recently and I learned something new, which I believe, might be interesting to some of us as well!
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Gautham Vasan (August 23, 2023; Amii)</b><br>
+        <i>Reward (Mis-)Specification in Reinforcement Learning</i>
+        <p align="justify">
+          When formulating a problem as a reinforcement learning (RL) task, one of the crucial steps is determining the reward function. Ideally, we seek reward functions that accurately capture the intended problem, are convenient to specify, and facilitate the agent with learning.  Many real-world robot learning problems, such as pick-and-place or arriving at a destination, can be seen as a problem of reaching a goal state as soon as possible. These problems can be naturally formulated as episodic RL tasks with termination upon reaching the goal state. For such tasks, a -1 reward every time step until termination is easy to specify and aligns well with our intention. However, such sparse-reward formulations are avoided in practice, as they are thought to be difficult and uninformative for learning.  Hence, RL practitioners often construct rewards that reflect the task designer's domain knowledge and preferred behaviors. These handcrafted rewards go beyond specifying what task to solve and guide the agent on how to solve the task. First, I'll elucidate how such guiding rewards can often bias the learned control policy in a potentially sub-optimal way.  Then I'll demonstrate the superiority of control policies learned using sparse rewards over guiding rewards. Contrary to popular belief, I'll show that it is possible to have robust, reliable learning from scratch on challenging vision-based robotics tasks using only sparse rewards in just a few hours.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Rich Sutton (August 24, 2023; CSC 3-33)</b><br>
+        <i>Are You Ready to Embrace Structural Credit Assignment?</i>
+        <p align="justify">
+          In artificial neural networks, many weights affect each momentary error. Deciding which of them to change is the problem of structural credit assignment. I hold that the field has never really come to grips with this problem. In the most naive algorithm, steepest descent, each weight is changed proportional to its component of the gradient vector. However, in a multi-layer network, the gradients in different layers can differ by multiple orders of magnitude, and this method results in some weights exploding while others remain almost static. Standard algorithms such as RMSprop and Adam normalize the gradient components by dividing each by its variance. This makes all weights change by about the same amount (which is better than their changing by wildly different amounts for no reason) but is also a direct abdication of responsibility for structural credit assignment---for deciding which weights should change and which should not. Structural credit assignment is most important in long-lived continual-learning networks, where the failure to address it erupts in the problems of catastrophic forgetting and loss of plasticity. Structural credit assignment is arguably key to the challenges of representation learning and generalization. In this talk I focus on the problem of structural credit assignment, but I also suggest that meta-gradient learning methods (such as IDBD) offer a possible route to its solution.
+        </p>
+      </p>
+      <br>
+
+      <br>
+      <br>
+      <p><i>The 2023 tea time talks are coordinated and organized by Yanqing Wu (yanqing.wu AT ualberta DOT ca).</i></p>
+      <br>
+      <p>
+        Special thanks to our dedicated volunteers: Alireza Kazemipour, Alex Lewandowski and Sheila Schoepp.
+      </p>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"><br></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
