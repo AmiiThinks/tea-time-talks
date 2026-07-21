@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>2026 Tea Time Talks Abstracts</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Begin page content -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="page-header">
+        <h1>2026 Tea Time Talks</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <font size="+1" face = "sans serif">
+
+      <p>
+        <b>Richard Sutton (June 17, 2026; UCOMM 2-108)</b><br>
+        <i>Rediscovering Reinforcement Learning</i>
+      </p>
+      <br>
+
+      <p>
+        <b>Khurram Javed (June 18, 2026; UCOMM 2-108)</b><br>
+        <i>Physical Atari: A Robust and Accessible Platform for Real-time Reinforcement Learning on Robots</i>
+        <p align="justify">
+          I will present Physical Atari, a robotics platform for testing reinforcement learning algorithms on robots. In the first half of the talk, I will talk about the key ideas to make a robotics platform suitable for reinforcement learning, and in the second half, I will share some results that show the necessity of continual adaptation when applying reinforcement learning to physical systems.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Marlos Machado (June 24, 2026; UCOMM 2-108)</b><br>
+        <i>The Laplacian Representation as a Basis for Integration</i>
+        <p align="justify">
+          Research is inherently reductionist: in each project, we isolate a small question and design a minimal system to instantiate the underlying idea. In reinforcement learning, although we ultimately want agents that learn representations, models, options, and plans, this approach typically leads us to focus on only a subset of these components. While this has clear advantages, it also leads to design choices tailored to specific use cases rather than to how components will work together. If we care about integration, and ultimately about agents with the core capabilities required for intelligence, we should instead focus on components that naturally compose. In this talk, I focus on one such component: the agent's learned representation, in particular the Laplacian representation. I will briefly discuss how my research group has been using it to advance several capabilities we believe are central to intelligence, and then, time permitting, try to highlight two of our recent results that support the idea of the Laplacian representation as a good inductive bias for reinforcement learning. First, I will show how the Laplacian representation can be used to model the emergence of diverse cell types across the hippocampal-entorhinal circuit. Second, I will discuss how it can serve as a substrate for behavioural foundation models and how, by allowing these models to continue learning after deployment, they can move beyond the linear span of their initial representations, enabling capabilities beyond those of existing approaches.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Csaba Szepesvari (June 25, 2026; UCOMM 2-108)</b><br>
+        <i>Some last minute (as ever) thoughts about never-ending learning</i>
+        <p align="justify">
+          I will make another attempt to formalize what we want from agents that need to learn in big worlds where the agent's prior knowledge is very limited. At a high level we want agents to get more skillful in face of evidence experienced, but stay indefinitely curious, and they should not stay nimble (age is just a number!). How do we formalize all of this in a meaningful way so that if we can recognize (test?) whether a particular learning algorithms satisfies our criteria. To get started, we introduce a number of simplifying assumptions: There will be no function approximation and no limit of how much memory the agents can use. The environment is a finite MDP, though nothing is known about the MDP. I allow the per step compute time spent by the agents to scale with the size of the environment. This is work in progress, and I am interested in starting a discussion about the ideas I will present. The approach we will take is to see whether we can formalize these requirements by putting constraints on the learning algorithm when they interact with "learnable" MDPs; the interesting question is how to formalize what is learnable, and how algorithms that behave well in learnable MDPs behave in the rest of MDPs.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Edan Meyer (July 7, 2026; UCOMM 2-108)</b><br>
+        <i>Why You Should Care About Connectivity</i>
+        <p align="justify">
+          We want agents that can learn many things at once — many auxiliary predictions, many options, many goals — but it is not clear how a neural network should accommodate multiple outputs with distinct objectives. Sharing representations across objectives seems desirable, yet doing so naively creates problems. Starting from a small example, I show how network connectivity affects learning speed, and that this problem grows with the network itself: when connectivity is poorly configured, scaling up a network can hurt its ability to continually learn rather than help it.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Levi Lelis (July 8, 2026; UCOMM 2-108)</b><br>
+        <i>Learning Neural Languages and Their Interpreters</i>
+        <p align="justify">
+          Neural networks often break down on examples that differ from those seen in training. One reason for this brittleness lies deep within our own field: computation. Current neural models can be effective at perception tasks, such as recognizing images of dogs and cats, but many problems cannot be solved (even approximately) in a fixed number of computational steps. For example, when manipulating lists of integers, the number of steps needed can grow with the input, and a sufficiently large input will eventually cause a fixed-depth model to produce garbage. In this talk, I will present an architecture that can adapt its computation at test time to problems unseen during training. The model learns, end-to-end, a vocabulary of neural symbols, together with a neural interpreter that executes them. Because execution is differentiable, we can synthesize neural programs at test time by searching the space of programs with gradient descent. The learned language allows the model to generalize combinatorially to problems requiring more or fewer computational steps than those seen in training, and to novel compositions of learned primitives, where competing neural models fail.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Shuai Liu (July 14, 2026; UCOMM 2-108)</b><br>
+        <i>Can offline policy gradients avoid suffering from suboptimal actions that are rarely seen?</i>
+        <p align="justify">
+          Offline policy-gradient methods often rely on importance sampling, causing their performance to deteriorate when the behavior policy assigns very small probability to certain actions, even when those actions are suboptimal. Ideally, an offline method should not pay heavily for actions that are both rare and unimportant. In this work-in-progress talk, I will explain the bottlenecks created by importance sampling and softmax policy gradients, introduce the intuition behind pessimistic approaches, and present a differentiable objective inspired by these ideas. I will then discuss why initializing from the behavior policy revives the difficulty and outline a possible approach toward a more practical method.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Rosanna Dovganyuk (July 15, 2026; UCOMM 2-108)</b><br>
+        <i>Imperfect Flows</i>
+        <p align="justify">
+          Flow models are generative frameworks that incrementally transform random noise into complex data distributions. I explain how flow matching can be used as a technique to train Continuous Normalizing Flows (CNFs) by predicting the underlying velocity vector field. Within the flow matching framework, we investigate the different sources of inaccuracies or imperfections that arise during both the learning and sampling processes. We want to understand whether these imperfections can counterintuitively improve downstream performance. Finally, we ask how learning models of the world is useful and explore how flow models are currently integrated into reinforcement learning environments
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Alireza Masoumian (July 16, 2026; UCOMM 2-108)</b><br>
+        <i>Imitate through values not just behaviours!</i>
+        <p align="justify">
+          I am going to talk about imitation learning and the advantage of assuming a realizable set of value functions rather than a realizable set of policies. We will see how this different assumption leads us to more interesting primal-dual algorithms instead of vanilla supervised learning (behavioural cloning), and see value class-based sample complexities in contrast to policy class-based guarantees. We&rsquo;ll see some ideas in the area of saddle-point optimization and no-regret learning.
+        </p>
+      </p>
+      <br>
+
+      <p>
+        <b>Justin Stevens (July 21, 2026; UCOMM 2-108)</b><br>
+        <i>From Hints to Textbooks: Studying Scaffolds through Bayesian Methods and LLMs</i>
+        <p align="justify">
+          Intelligent tutoring systems increasingly rely on AI-generated hints, but not all hints do the same job: some point out a feature of a problem, some state a governing principle, some walk a student to the answer, and some extend thinking toward future problems. This talk presents an analysis for classifying mathematical hints into these four types and for studying how hints sequence from one type to the next.
+          <br><br>
+          Using a corpus of Socratic hint chains spanning seven mathematics domains, we model hint-to-hint transitions with a Dirichlet prior and a multinomial likelihood via Bayesian conjugacy, yielding a transition matrix for each domain. Comparing these matrices using KL divergence reveals that counting &amp; probability are consistent outliers. We apply the same machinery to Quarfoot's nine-part problem typology, recovering the expected structure in which &ldquo;masterpieces&rdquo; and &ldquo;improvisations&rdquo; sit opposite atomic &ldquo;first notes&rdquo; in terms of KL-divergence.
+          <br><br>
+          Finally, we will present notes on how future curricula and textbooks can evolve using ideas from intelligent tutoring systems, including hints and problem-type classifications. These ideas come from the author&rsquo;s experience recently revising and finishing his Olympiad Number Theory book: <a href="http://numbertheoryguy.com/publications/olympiad-number-theory-book" target="_blank">numbertheoryguy.com/publications/olympiad-number-theory-book</a>.
+        </p>
+      </p>
+      <br>
+
+      <br>
+      <br>
+      <p><i>The 2026 tea time talks are coordinated and organized by Esraa Elelimy (elelimy AT ualberta DOT ca) and Seth Akins (slakins AT ualberta DOT ca).</i></p>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted"><br></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+  </html>
