@@ -28,12 +28,32 @@
   <div class="container">
     <font size="+1" face = "sans serif">
 
+        <p>
+          <b>Kiran Deol (July 28, 2026; UCOMM 2-108)</b><br>
+          <i>Not All Capacity is Equal: Local Measures of Plasticity in Continual Learning</i>
+          <p align="justify">
+              Plasticity loss describes the decline in a neural network’s ability to learn over the course of continual training. Many diagnostics characterize the problem through global or task-agnostic markers, overlooking how the current task interacts with the network’s parameterization.
+              We work from the insight that plasticity depends not only on the network's overall capacity, but on said capacity being accessible and useful to the current task. We introduce UPC and GAP, two task-conditioned metrics derived from the singular value decomposition of the network’s output Jacobian. These metrics quantify the availability and task alignment of local output-changing parameter directions, often providing earlier indicators of plasticity loss without requiring training to task completion. Through controlled manipulations of the network’s available subspaces, we empirically show that networks with comparable - or even greater - overall capacity can exhibit substantially different plasticity, which our metrics correctly flag.
+              We also use this framework to compare several plasticity interventions and find that adding random neurons is the most robust. Together, our results characterize plasticity in terms of usable, task-relevant capacity rather than aggregate capacity alone, while establishing random expansion as a strong baseline for future interventions.
+          </   p>
+        </p>
+        <br>
+        
+        <p>
+          <b>Alex Ayoub (July 23, 2026; UCOMM 2-108)</b><br>
+          <i>Simple and Scalable Multitask Reinforcement Learning</i>
+          <p align="justify">
+              A central challenge in multitask reinforcement learning is training a single policy that can identify the task it is currently facing and adapt its behavior through interaction, without being given an explicit task identifier. In this talk, I present a simple approach that leverages current progress in casual autoregressive function approximators that conditions each action on the complete interaction history. This allows the function approximator to infer latent task information and use it to select task-dependent actions.
+          </   p>
+        </p>
+        <br>
+
 
         <p>
           <b>Matthew Vandergrift (July 22, 2026; UCOMM 2-108)</b><br>
           <i>RL Researchers Need to Distinguish Between Solving Simulators and Using Simulators as a Proxy</i>
           <p align="justify">
-                Giving a short overview of a position paper I recently presented at ICML. One goal in reinforcement learning (RL) research is to understand general-purpose sequential decision-making, using benchmark simulators as a proxy for learning in deployment settings. When running experiments, however, the goal of achieving high performance in the simulator can mutate into focusing exclusively on solving the simulator. To achieve high scores, researchers may adopt solutions exclusively meant for solving simulators, rather than learning while the agent is deployed outside a simulator. Solving simulators is also worthy of investigation, but it is a fundamentally different RL research question. In this paper, we argue that RL researchers need to distinguish between two use cases of simulators: solving simulators and using simulators as a proxy for learning in deployment. We first discuss how these two use-cases are importantly different, in terms of constraints on how the agent can use the simulator, which algorithms are appropriate, and which evaluation metrics are appropriate. We then highlight several issues and misleading conclusions that can occur by not making the distinction between these two settings clear, supported with examples and simple experiments. This work is a call to the community to begin clearly distinguishing how they are using simulators in their work, hopefully sparking further discussion on which empirical practices work best in each setting.
+                One goal in reinforcement learning (RL) research is to understand general-purpose sequential decision-making, using benchmark simulators as a proxy for learning in deployment settings. When running experiments, however, the goal of achieving high performance in the simulator can mutate into focusing exclusively on solving the simulator. To achieve high scores, researchers may adopt solutions exclusively meant for solving simulators, rather than learning while the agent is deployed outside a simulator. Solving simulators is also worthy of investigation, but it is a fundamentally different RL research question. In this paper, we argue that RL researchers need to distinguish between two use cases of simulators: solving simulators and using simulators as a proxy for learning in deployment. We first discuss how these two use-cases are importantly different, in terms of constraints on how the agent can use the simulator, which algorithms are appropriate, and which evaluation metrics are appropriate. We then highlight several issues and misleading conclusions that can occur by not making the distinction between these two settings clear, supported with examples and simple experiments. This work is a call to the community to begin clearly distinguishing how they are using simulators in their work, hopefully sparking further discussion on which empirical practices work best in each setting.
           </    p>
         </p>
         <br>
